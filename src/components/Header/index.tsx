@@ -1,4 +1,5 @@
 import { SignInButton } from '../SignInButton';
+import Image from 'next/image'
 import Link from 'next/link'
 import styles from './styles.module.scss'
 import { useRouter } from 'next/router';
@@ -11,7 +12,7 @@ export function Header() {
   return (
     <header className={styles.headerContainer}>
       <div className={styles.headerContent}>
-        <img src='/images/logo.svg' alt='ig.news'></img>
+        <Image src='/images/logo.svg' alt='ig.news'></Image>
         <nav>
           <ActiveLink activeClassName={styles.active} href='/' >
             <a>Home</a>
